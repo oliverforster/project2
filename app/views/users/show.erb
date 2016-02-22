@@ -1,4 +1,12 @@
 <h1><%= @user.username %></h1>
 <h2><%= @user.user_type %></h2>
 
-
+<div class="pure-g">
+<div class="pure-u-1-24"></div>
+<% @user.recipes.each do |user| %>
+<div class="pure-u-6-24">
+  <%= user.name %>
+</div>
+<% end %>
+<div class="pure-u-1-24"></div>
+</div>

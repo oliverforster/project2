@@ -21,6 +21,8 @@ APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
 
 configure do
+enable :sessions
+set :session_secret, ENV['SESSION_SECRET'] || "session"
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
