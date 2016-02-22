@@ -1,0 +1,22 @@
+{
+  "name": "WDI_Project2",
+  "homepage": "https://github.com/oliverforster/project2",
+  "authors": [
+    "Oli Forster <oliforster798@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.0"
+  }
+}
