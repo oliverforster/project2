@@ -15,4 +15,8 @@ helpers do
     end
   end
 
+  def is_chef?
+    !!current_user.user_type == 'chef'
+  end
+
 end
