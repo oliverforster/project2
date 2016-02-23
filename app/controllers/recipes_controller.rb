@@ -1,5 +1,5 @@
 get '/recipes' do
-
+  @recipes = Recipe.all
   erb :'recipes/index'
 end
 
@@ -15,7 +15,7 @@ end
 
 post '/recipes' do
   @recipe = Recipe.new(params[:recipe])
-  if @recipe.save
+  if @recipe.create
     redirect "/recipes"
   end
 end

@@ -39,13 +39,13 @@ end
   {
     challenge_id: 1,
     method: "chop cook serve",
-    ingriedients: "flour eggs tomato",
+    ingredients: "flour eggs tomato",
     name:"cake1"
   },
   {
     challenge_id: 1,
     method: "chop cook serve",
-    ingriedients: "flour eggs cucumber",
+    ingredients: "flour eggs cucumber",
     name:"cake2"
   }].each do |recipe|
   Recipe.create!(recipe)
