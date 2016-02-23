@@ -21,6 +21,7 @@ end
 
 get '/recipes/:id' do
   @recipe = Recipe.find(params[:id])
+  @chef = @recipe.users
   erb :'recipes/show'
 end
 
