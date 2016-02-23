@@ -10,7 +10,7 @@ post '/register' do
   if @user.save
     session[:user_id] = @user.id 
     flash[:success] = "Thanks for registering"
-    redirect '/users'
+    redirect "/home"
   else
     erb :'authentications/new'
   end

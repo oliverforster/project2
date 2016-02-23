@@ -15,12 +15,14 @@ Challenge.destroy_all
     email: "oliforster798@gmail.com",
     start_date: "2/21/2012",
     user_type: "chef",
+    password: "hello"
   },
   {
     username: "Jay",
     full_name: "Jay Chauhan",
     email: "jay@hotmail.com",
-    user_type: "visitor"
+    user_type: "visitor",
+    password: "hello"
 
   },
   {
@@ -28,6 +30,7 @@ Challenge.destroy_all
     full_name: "Carmen Carmona",
     email: "Carmen@yahoo.com",
     user_type: "visitor",
+    password: "hello"
   }].each do |user|
   User.create!(user)
 end
