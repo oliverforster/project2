@@ -1,10 +1,9 @@
-<h1></h1>
-<div class="pure-g">
-<div class="pure-u-1-24"></div>
+<h1>All Recipes</h1>
+<div class="recipes pure-g">
 <% @recipes.each do |recipe| %>
-<div class="pure-u-6-24">
-  <p><%= recipe.name %></p>
-</div>
+<div class="pure-u-2-5">
+  <a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a>
+  </div>
 <% end %>
-<div class="pure-u-1-24"></div>
+
 </div>

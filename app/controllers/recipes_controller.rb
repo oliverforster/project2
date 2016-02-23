@@ -4,18 +4,18 @@ get '/recipes' do
 end
 
 get 'recipes/:id' do
-
-
+  @recipe = Recipe.find(params[:id])
   erb :'recipes/show'
 end
 
 get '/recipes/new' do
+  @recipe = Recipe.new
   erb :'recipes/new'
 end
 
 post '/recipes' do
   @recipe = Recipe.new(params[:recipe])
-  if @recipe.create
+  if @recipe.save
     redirect "/recipes"
   end
 end
