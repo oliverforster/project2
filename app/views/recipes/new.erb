@@ -1,0 +1,33 @@
+<h1>New Recipe</h1>
+<div class="pure-g">
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+<form class="pure-form pure-form-aligned" method="post" action="/recipes">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="challenge_id">Challenge id</label>
+            <input id="name" type="text" name="recipe[challenge_id]"placeholder="Challenge id">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="recipe[name]"placeholder="Name">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="ingredients">Ingredients</label>
+            <textarea id="name" type="text" placeholder="ingriedents" name="recipe[ingredients]"></textarea>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="method">Method</label>
+            <textarea id="name" type="text" placeholder="Method" name="recipe[method]"></textarea>
+        </div>
+
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+    </fieldset>
+</form>
+</div>
+<div class="pure-u-1-5"></div>
+</div>
