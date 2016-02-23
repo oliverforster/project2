@@ -1,0 +1,63 @@
+<h2>Register</h2>
+<% @user.errors.full_messages.each do |error| %>
+  <div class="alert alert-danger alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <%= error %>
+      </div>
+    <% end %>
+
+<form class="pure-form pure-form-stacked" method="post" action="/register">
+    <fieldset>
+
+        <label for="user_name">User name</label>
+        <input id="email" name="user[username]" type="text" class="form-control" id="username" placeholder="Username">
+
+        <label for="full_name">Full Name</label>
+        <input id="email" name="user[full_name]" type="text" class="form-control" id="email" placeholder="Full Name">
+
+        <label for="email">Email</label>
+        <input id="email" name="user[email]" type="text" class="form-control" id="email" placeholder="email">
+
+        <label for="state">Type</label>
+        <select id="state" name="user[user_type]">
+            <option>visitor</option>
+            <option>Chef</option>
+        </select>
+
+        <label for="state">Year started chefing - not applicable if visitor</label>
+        <select id="state" name="user[start_date]">
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+            <option>1990+</option>
+        </select>
+
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password">
+
+
+        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+    </fieldset>
+</form>

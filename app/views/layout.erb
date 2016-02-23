@@ -6,6 +6,19 @@
   <%= js :application %>
 </head>
 <body>
+<div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="#" id="menuLink1" class="pure-menu-link">Contact</a>
+            <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="/register" class="pure-menu-link">Register</a></li>
+                <li class="pure-menu-item"><a href="/login" class="pure-menu-link">Log in</a></li>
+                <li class="pure-menu-item" ><a class="pure-menu-link" href="/logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 <%= yield %>
 </body>
 </html>

@@ -1,3 +1,9 @@
+get "/users" do
+  authorize!
+  @users = User.all
+  erb :"users/index"
+end
+
 get '/users/:id' do  
   @user = User.find(params[:id])
 
