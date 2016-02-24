@@ -25,6 +25,7 @@ end
 put '/recipes/:id' do
   @recipe = Recipe.find(params[:id])
   if @recipe.update(params[:recipe])
+    redirect "/recipes/#{@recipe.id}"
   else
     erb :"recipes/show"
   end
@@ -41,6 +42,14 @@ post '/recipes/:id/like' do
   @recipe.users << current_user
   @chef = @recipe.users
   erb :'recipes/show'
+end
+
+delete "/recipes/:id" do
+
+  recipe = Recipe.find(params[:id])
+  recipe.destroy
+
+  redirect "/recipes"
 end
 
 

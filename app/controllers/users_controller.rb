@@ -23,3 +23,12 @@ put '/users/:id' do
     erb :"users/show"
   end
 end
+
+delete "/users/:id" do
+
+  users = User.find(params[:id])
+  session.clear
+  users.destroy
+
+  redirect "/login"
+end

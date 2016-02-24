@@ -2,7 +2,7 @@
 <div class="pure-g">
 <div class="pure-u-1-5"></div>
 <div class="pure-u-3-5">
-<form class="pure-form pure-form-aligned" method="post" action="/recipes/:id">
+<form class="pure-form pure-form-aligned" method="post" action="/recipes/<%= @recipe.id %>">
 <input type="hidden" name="_method" value="put">
     <fieldset>
         <div class="pure-control-group">
