@@ -10,7 +10,7 @@
   <button type="submit" class="pure-button">Delete</button>
 </form>
 
-<% if current_user.can_vote?(@recipe) %>
+<% if current_user.can_vote?(@recipe) && !is_chef? %>
   <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
     <button type="submit" class="pure-button">Star</button>
   </form>
