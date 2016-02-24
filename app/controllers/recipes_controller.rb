@@ -11,8 +11,8 @@ end
 
 post '/recipes' do
   @recipe = Recipe.new(params[:recipe])
+  @recipe.chef_id = current_user.id
   if @recipe.save
-    @recipe.chef = 10
     redirect "/recipes"
   end
 end

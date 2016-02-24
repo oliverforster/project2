@@ -5,6 +5,7 @@ end
 
 get '/users/:id' do  
   @user = User.find(params[:id])
+  @recipes = Recipe.where(chef_id: @user.id)
   erb :'/users/show'
 end
 
