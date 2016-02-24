@@ -12,6 +12,6 @@
 
 
 <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
-  <input type="hidden">
+  <input type="hidden" name="_method" value="put">
   <button type="submit" class="pure-button">Star</button>
 </form>

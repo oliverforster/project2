@@ -6,6 +6,7 @@ end
 get '/users/:id' do  
   @user = User.find(params[:id])
   @recipes = @user.recipes
+  @stars = Recipe
   erb :'/users/show'
 end
 
