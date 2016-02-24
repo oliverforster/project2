@@ -42,6 +42,7 @@ post '/recipes/:id/like' do
   @recipe.users << current_user
   @chef = @recipe.users
   erb :'recipes/show'
+  redirect "/recipes/#{@recipe.id}"
 end
 
 delete "/recipes/:id" do

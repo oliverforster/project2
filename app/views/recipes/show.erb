@@ -6,6 +6,12 @@
 
 <a class="pure-button" href="/recipes/<%= @recipe.id %>/edit">Update</a>
 <form id="showDeleteButton" method="post" action="/recipes/<%= @recipe.id%>">
-              <input type="hidden" name="_method" value="delete">
-              <button type="submit" class="pure-button">Delete</button>
-            </form>
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit" class="pure-button">Delete</button>
+</form>
+
+
+<form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
+  <input type="hidden">
+  <button type="submit" class="pure-button">Star</button>
+</form>
