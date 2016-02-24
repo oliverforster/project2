@@ -39,8 +39,7 @@ end
 
 post '/recipes/:id/like' do
   @recipe = Recipe.find(params[:id])
-  @recipe.users << current_user
-  @chef = @recipe.users
+  @recipe.users << current_user if !@recipe.users.include? current_user 
   erb :'recipes/show'
   redirect "/recipes/#{@recipe.id}"
 end
