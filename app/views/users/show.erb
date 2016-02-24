@@ -1,38 +1,47 @@
 <h1><%= @user.username %></h1>
 <h2><%= @user.user_type %></h2>
 
-<div class="pure-g">
-<div class="pure-u-1-24"></div>
-<% @recipes.each do |recipe| %>
-<div class="pure-u-6-24">
-  <%= recipe.name %>
-</div>
-<% end %>
-<div class="pure-u-1-24"></div>
-</div>
-
-<div class="pure-g">
-<div class="pure-u-1-24"></div>
-<% @recipes.each do |recipe| %>
-<div class="pure-u-6-24">
-  <%= recipe.name %>
-</div>
-<% end %>
-<div class="pure-u-1-24"></div>
-</div>
-
-<a class="pure-button" href="/users/<%= current_user.id %>/edit">Edit Profile</a>
-<form id="showDeleteButton" method="post" action="/users/<%= @user.id%>">
-              <input type="hidden" name="_method" value="delete">
-              <button type="submit" class="pure-button">Delete</button>
-            </form>
 <% if is_chef? %>
-<div class="pure-g">
-  <div class="pure-u-10-24"></div>
-  <div class="pure-u-4-24">
-  <a class="pure-button pure-button-primary" href="/recipes/new">Create Recipe</a>
-  
+  <h3>Recipes Created</h3>
+  <div class="pure-g">
+  <% @recipes.each do |recipe| %>
+    <div class="pure-u-1-24"></div>
+    <div class="pure-u-6-24">
+      <%= recipe.name %>
+    </div>
+  <% end %>
+  <div class="pure-u-1-24"></div>
   </div>
-  <div class="pure-u-10-24"></div>
-</div>
+  <div class="pure-g">
+    <div class="pure-u-10-24"></div>
+    <div class="pure-u-4-24">
+    <a class="pure-button pure-button-primary" href="/recipes/new">Create Recipe</a>
+  
+    <a class="pure-button" href="/users/<%= current_user.id %>/edit">Edit Profile</a>
+    <form id="showDeleteButton" method="post" action="/users/<%= @user.id%>"%>
+      <button type="submit" class="pure-button">Delete</button>
+    </div>
+    <div class="pure-u-10-24"></div>
+  </div>
+<% else %>
+  <h3>Recipes Starred</h3>
+  <div class="pure-g">
+  <% @recipes.each do |recipe| %>
+    <div class="pure-u-1-24"></div>
+    <div class="pure-u-6-24">
+      <%= recipe.name %>
+    </div>
+  <% end %>
+  <div class="pure-u-1-24"></div>
+  </div>
+  <div class="pure-g">
+    <div class="pure-u-10-24"></div>
+    <div class="pure-u-4-24">
+    <a class="pure-button" href="/users/<%= current_user.id %>/edit">Edit Profile</a>
+    <form id="showDeleteButton" method="post" action="/users/<%= @user.id%>"%>
+      <button type="submit" class="pure-button">Delete</button>
+    </div>
+    <div class="pure-u-10-24"></div>
+  </div>
+
 <% end %>
