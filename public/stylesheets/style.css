@@ -6,6 +6,6 @@ div.white { background-color: green; }
 
 .recipes { width: 960px; margin: 100px auto; text-align: center; }
 
-.far-out { text-align: right; }
+.far-out { margin-left: 210%; }
 
 /*# sourceMappingURL=style.css.map */
