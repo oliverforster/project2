@@ -1,0 +1,34 @@
+<h1>Update Recipe</h1>
+<div class="pure-g">
+<div class="pure-u-1-5"></div>
+<div class="pure-u-3-5">
+<form class="pure-form pure-form-aligned" method="post" action="/recipes/:id">
+<input type="hidden" name="_method" value="put">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="challenge_id">Challenge id</label>
+            <input id="name" type="text" name="recipe[challenge_id]" value="<%= @recipe.challenge_id %>">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="recipe[name]" value="<%= @recipe.name %>">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="ingredients">Ingredients</label>
+            <textarea id="name" type="text" value="<%= @recipe.ingredients %>" name="recipe[ingredients]"></textarea>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="method">Method</label>
+            <textarea id="name" type="text" value="<%= @recipe.method %>" name="recipe[method]"></textarea>
+        </div>
+
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Update</button>
+    </fieldset>
+</form>
+</div>
+<div class="pure-u-1-5"></div>
+</div>

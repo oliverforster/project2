@@ -13,7 +13,20 @@ post '/recipes' do
   @recipe = Recipe.new(params[:recipe])
   @recipe.chef_id = current_user.id
   if @recipe.save
-    redirect "/recipes"
+    redirect "/challenges/#{@recipe.challenge_id}"
+  end
+end
+
+get "/recipes/:id/edit" do
+  @recipe = Recipe.find(params[:id])
+  erb :"recipes/edit"
+end
+
+put '/recipes/:id' do
+  @recipe = Recipe.find(params[:id])
+  if @recipe.update(params[:recipe])
+  else
+    erb :"recipes/show"
   end
 end
 
