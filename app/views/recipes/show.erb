@@ -2,13 +2,7 @@
 
 
 
-<h2><%= @recipe.chef_id %></h2>
-
-<a class="pure-button" href="/recipes/<%= @recipe.id %>/edit">Update</a>
-<form id="showDeleteButton" method="post" action="/recipes/<%= @recipe.id%>">
-  <input type="hidden" name="_method" value="delete">
-  <button type="submit" class="pure-button">Delete</button>
-</form>
+<h3><%= @recipe.users.count %></h3>
 
 <% if current_user.can_vote?(@recipe) && !is_chef? %>
   <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">

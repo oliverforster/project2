@@ -1,9 +1,11 @@
-body { background-color: red; }
+body { background-color: brown; }
 
 div.black { background-color: blue; }
 
 div.white { background-color: green; }
 
 .recipes { width: 960px; margin: 100px auto; text-align: center; }
+
+.far-out { text-align: right; }
 
 /*# sourceMappingURL=style.css.map */

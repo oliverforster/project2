@@ -10,12 +10,14 @@
 <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+        </li>
+        <li class="pure-menu-item pure-menu-selected"><a href="/recipes" class="pure-menu-link">Recipes</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="/challenges" class="pure-menu-link">Past Challenges</a></li>
+        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover far-out">
             <a href="/users/<%= current_user.id %>" id="menuLink1" class="pure-menu-link"><%= current_user.username %></a>
             <ul class="pure-menu-children">
                 <li class="pure-menu-item" ><a class="pure-menu-link" href="/logout">Logout</a></li>
             </ul>
-        </li>
     </ul>
 </div>
 <% else %>
