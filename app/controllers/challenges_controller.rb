@@ -8,7 +8,7 @@ end
 # SHOW
 get "/challenges/:id" do
   @challenge = Challenge.find(params[:id])
-  @recipes = Recipe.where(challenge_id: (params[:id]))
+  @recipes = @challenge.recipes
   if @challenge
     erb :"challenges/show"
   else

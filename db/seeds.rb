@@ -10,14 +10,6 @@ Challenge.destroy_all
 
 [
   {
-    username: "Oli",
-    full_name: "Oli Forster",
-    email: "oliforster798@gmail.com",
-    start_date: "2/21/2012",
-    user_type: "chef",
-    password: "hello"
-  },
-  {
     username: "Jay",
     full_name: "Jay Chauhan",
     email: "jay@hotmail.com",
@@ -35,13 +27,14 @@ Challenge.destroy_all
   User.create!(user)
 end
 
+u_oli = User.create(username: "Oli",
+                    full_name: "Oli Forster",
+                    email: "oliforster798@gmail.com",
+                    start_date: "2/21/2012",
+                    user_type: "chef",
+                    password: "hello") 
+
 [
-  {
-    challenge_id: 1,
-    method: "chop cook serve",
-    ingredients: "flour eggs tomato",
-    name:"cake1"
-  },
   {
     challenge_id: 1,
     method: "chop cook serve",
@@ -50,6 +43,13 @@ end
   }].each do |recipe|
   Recipe.create!(recipe)
 end
+
+r_cake1 = Recipe.create(challenge_id: 1,
+                        method: "chop cook serve",
+                        ingredients: "flour eggs tomato",
+                        name:"cake1")
+
+u_oli.recipes << r_cake1
 
 [ {
   name: "cake challenge",

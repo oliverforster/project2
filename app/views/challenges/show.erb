@@ -2,5 +2,7 @@
 
 <% @recipes.each do |recipe| %>
   <%= recipe.name %>
-  <%= recipe.chef %>
+  <% if recipe.chef %>
+    <%= recipe.chef.username %>
+  <% end %>
 <% end %> 
