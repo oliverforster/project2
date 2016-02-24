@@ -11,15 +11,16 @@ end
 
 post '/recipes' do
   @recipe = Recipe.new(params[:recipe])
+  @recipe.chef_id = current_user
   if @recipe.save
-    @recipe.chef = current_user
+    @recipe.chef_id = current_user
     redirect "/recipes"
   end
 end
 
 get '/recipes/:id' do
   @recipe = Recipe.find(params[:id])
-  @chef = @recipe.users
+  @chef = @recipe.chef_id
   erb :'recipes/show'
 end
 
