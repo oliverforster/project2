@@ -4,6 +4,7 @@ body { background-color: #CDD5D1; }
 nav { background-color: #546A76; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
+nav .logo ul li:hover { background-color: #698594; }
 
 .pure-menu-link { color: #07DE2A; }
 

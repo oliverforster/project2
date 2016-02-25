@@ -1,0 +1,12 @@
+<div class="pure-g challengehome">
+  <div class="pure-u-6-24"><p></p></div>
+  <div class="pure-u-12-24">
+  <% @challenges.each do |challenge| %>
+    <a class="button-secondary pure-button" href="/challenges/<%= challenge.id %>">
+      <h2><%= challenge.name %></h2>
+      <p><%= challenge.information %></p>  
+    </a>
+    <% end %> 
+  </div>
+  <div class="pure-u-6-24"><p></p></div>
+</div>

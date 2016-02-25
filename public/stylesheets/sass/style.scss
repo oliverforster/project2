@@ -15,6 +15,11 @@ nav {
       span {
         color: #2BDE73;
       }
+      ul {
+        li:hover{
+          background-color: lighten(#546A76, 10%);
+        }
+      }
   }
 }
 
