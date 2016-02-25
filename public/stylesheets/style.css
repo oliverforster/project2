@@ -21,12 +21,15 @@ div.white { background-color: green; }
 
 .homeChallenge { background-color: red; border-radius: 14px; }
 
-.button-secondary { margin-top: 50px; background-color: #2BDE73; border-radius: 60px; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); width: 100%; }
+.button-secondary { margin-top: 10px; background-color: #2BDE73; border-radius: 60px; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); width: 100%; }
 .button-secondary h2 { color: #333333; font-weight: 200; }
 .button-secondary p { color: #333333; font-weight: 200; }
 
 .challengehome { margin-top: 150px; }
 
 .rules { margin-top: 50px; font-weight: 100; }
+.rules .black { background-color: #b1beb8; border-radius: 14px; }
+.rules .black h2 { text-align: center; font-weight: 300; }
+.rules .black p { padding: 0 8px; }
 
 /*# sourceMappingURL=style.css.map */
