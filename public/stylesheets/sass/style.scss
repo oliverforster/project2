@@ -32,12 +32,13 @@ nav {
       span {
         color: #2BDE73;
       }
-      ul {
-        li:hover{
-          background-color: lighten(#546A76, 10%);
-        }
-      }
   }
+}
+
+
+a.pure-menu-link:hover {
+  background-color: lighten(#546A76, 10%);
+  height: 100%;
 }
 
 
@@ -134,4 +135,10 @@ div.white {
   height: 50vh;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+div {
+  p  {
+    font-weight: 100;
+  }
 }

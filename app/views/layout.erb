@@ -9,10 +9,8 @@
 <% if is_logged_in? %>
 <nav>
 <div class="pure-menu pure-menu-horizontal">
-<div class="">
     <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link logo"><span>Cook</span>Starter</a></li>
-        </li>
         <li class="pure-menu-item pure-menu-selected"><a href="/recipes" class="pure-menu-link">Recipes</a></li>
         <li class="pure-menu-item pure-menu-selected"><a href="/challenges" class="pure-menu-link">Past Challenges</a></li>
         <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
@@ -20,8 +18,8 @@
             <ul class="pure-menu-children">
                 <li class="pure-menu-item" ><a class="pure-menu-link" href="/logout">Logout</a></li>
             </ul>
+        </li>
     </ul>
-</div>
 </div>
 </nav>
 <% else %>

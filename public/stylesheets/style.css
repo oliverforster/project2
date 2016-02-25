@@ -10,7 +10,8 @@ h3 { color: #333333; font-weight: 200; }
 nav { background-color: #546A76; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
-nav .logo ul li:hover { background-color: #698594; }
+
+a.pure-menu-link:hover { background-color: #698594; height: 100%; }
 
 .pure-menu-link { color: #07DE2A; }
 
@@ -46,5 +47,7 @@ div.white { background-color: green; }
 .picture { height: 200px; background-repeat: no-repeat; background-size: contain; }
 
 .recipe_pic { height: 50vh; background-repeat: no-repeat; background-size: contain; }
+
+div p { font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */
