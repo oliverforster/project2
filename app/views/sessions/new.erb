@@ -1,20 +1,24 @@
 <h2>Log In</h2>
+<div class="pure-g login">
+    <div class="pure-u-2-5"></div>
+    <div class="pure-u-1-5">
+      <form class="pure-form pure-form-stacked" method="post" action="/login">
+          <fieldset>
 
 
-<form class="pure-form pure-form-stacked" method="post" action="/login">
-    <fieldset>
-
-
-        <label for="email">Email</label>
-        <input id="email" name="user[email]" type="text" class="form-control" id="email" placeholder="email">
+              <label for="email">Email</label>
+              <input id="email" name="user[email]" type="text" class="form-control" id="email" placeholder="email">
 
 
 
 
-        <label for="password">Password</label>
-        <input id="password" type="password" name="user[password]" placeholder="Password">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="user[password]" placeholder="Password">
 
 
-        <button type="submit" class="pure-button pure-button-primary">Log in</button>
-    </fieldset>
-</form>
+              <button type="submit" class="pure-button pure-button-primary">Log in</button>
+          </fieldset>
+      </form>
+    </div>
+    <div class="pure-u-2-5"></div>
+</div>

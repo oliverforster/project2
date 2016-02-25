@@ -1,6 +1,25 @@
-body {
-  background-color: brown;
+@font-face {
+  font-family: "customFont";
+  src: url("/images/fonts/RNS-B.ttf");
 }
+
+body {
+  background-color: #F7FAFA;
+}
+
+nav {
+  background-color: #7F7FBE;
+  .logo {
+    font-family: "customFont", RNS-B;
+    font-size: 30px;
+      span {
+        color: #2BDE73;
+      }
+  }
+}
+
+
+
 
 div.black {
   background-color: blue;
@@ -17,9 +36,13 @@ div.white {
 }
 
 .far-out {
-  margin-left: 210%;
+  margin-left: 110%;
 }
 
 .button-warning {
-            background: rgb(223, 117, 20); /* this is an orange */
-        }
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.login {
+  margin-top: 150px;
+}
