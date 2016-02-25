@@ -1,6 +1,12 @@
 @font-face { font-family: "customFont"; src: url("/images/fonts/RNS-B.ttf"); }
 body { background-color: #CDD5D1; }
 
+h1 { color: #333333; font-weight: 200; }
+
+h2 { color: #333333; font-weight: 200; }
+
+h3 { color: #333333; font-weight: 200; }
+
 nav { background-color: #546A76; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
@@ -32,5 +38,7 @@ div.white { background-color: green; }
 .rules .black { background-color: #b1beb8; border-radius: 14px; }
 .rules .black h2 { text-align: center; font-weight: 300; }
 .rules .black p { padding: 0 8px; }
+
+.picture { height: 200px; background-repeat: no-repeat; background-size: contain; }
 
 /*# sourceMappingURL=style.css.map */

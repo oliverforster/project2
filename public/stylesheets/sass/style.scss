@@ -7,6 +7,22 @@ body {
   background-color: #CDD5D1;
 }
 
+h1 {
+  color: #333333;
+  font-weight: 200;
+}
+
+h2 {
+  color: #333333;
+  font-weight: 200;
+}
+
+h3 {
+  color: #333333;
+  font-weight: 200;
+}
+
+
 nav {
   background-color: #546A76;
   .logo {
@@ -94,4 +110,10 @@ div.white {
       padding: 0 8px;
     }
  }
+}
+
+.picture {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

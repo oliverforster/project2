@@ -39,7 +39,7 @@ end
 u_oli = User.create(username: "Oli",
                     full_name: "Oli Forster",
                     email: "oliforster798@gmail.com",
-                    start_date: "2/21/2012",
+                    start_date: "2012",
                     user_type: "chef",
                     profile_pic: "http://static.fjcdn.com/pictures/Barak+oli_40cb9a_4918779.jpg",
                     password: "hello") 
@@ -47,7 +47,7 @@ u_oli = User.create(username: "Oli",
 u_max = User.create(username: "Maxxx",
                     full_name: "Max Hilliard",
                     email: "max@gmail.com",
-                    start_date: "2/21/2002",
+                    start_date: "2002",
                     user_type: "chef",
                     profile_pic: "http://amahighlights.com/wp-content/uploads/gordon-ramsay.jpg",
                     password: "hello") 
