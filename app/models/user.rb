@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
     user_type == 'chef'
   end
 
+
   has_secure_password
 
 end
