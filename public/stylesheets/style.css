@@ -26,6 +26,8 @@ div.white { background-color: green; }
 
 .button-warning { background: #df7514; /* this is an orange */ }
 
+.button-row { margin-top: 100px; text-align: center; }
+
 .login { margin-top: 150px; }
 
 .homeChallenge { background-color: red; border-radius: 14px; }
