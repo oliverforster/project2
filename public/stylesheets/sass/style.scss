@@ -71,7 +71,8 @@ div.white {
 }
 
 .button-warning {
-  background: rgb(223, 117, 20); /* this is an orange */
+  background: rgb(223, 117, 20);
+  border-radius: 14px;
 }
 
 .button-row {
@@ -129,7 +130,9 @@ div.white {
   height: 200px;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: 40%;
 }
+
 
 .recipe_pic {
   height: 50vh;
@@ -141,4 +144,25 @@ div {
   p  {
     font-weight: 100;
   }
+}
+
+.picture-show {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.pure-g {
+  div {
+    text-align: center;
+    margin-top: 10px;
+    a {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+button {
+  min-width: 100%;
 }

@@ -25,7 +25,7 @@ div.white { background-color: green; }
 
 .pure-menu-allow-hover { float: right; margin-top: 17px; margin-right: 9px; }
 
-.button-warning { background: #df7514; /* this is an orange */ }
+.button-warning { background: #df7514; border-radius: 14px; }
 
 .button-row { margin-top: 100px; text-align: center; }
 
@@ -44,10 +44,17 @@ div.white { background-color: green; }
 .rules .black h2 { text-align: center; font-weight: 300; }
 .rules .black p { padding: 0 8px; }
 
-.picture { height: 200px; background-repeat: no-repeat; background-size: contain; }
+.picture { height: 200px; background-repeat: no-repeat; background-size: contain; margin-left: 40%; }
 
 .recipe_pic { height: 50vh; background-repeat: no-repeat; background-size: contain; }
 
 div p { font-weight: 100; }
+
+.picture-show { height: 200px; background-repeat: no-repeat; background-size: cover; }
+
+div.pure-g div { text-align: center; margin-top: 10px; }
+div.pure-g div a { min-width: 100%; max-width: 100%; }
+
+button { min-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
