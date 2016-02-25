@@ -1,5 +1,10 @@
 <h1><%= @recipe.name %></h1>
 
+<div style="background-image: url('<%= @recipe.recipe_pic %>'); height: 50vh;"></div>
+
+<p><%= @recipe.ingredients %></p>
+<p><%= @recipe.method %></p>
+
 
 
 <h3><%= @recipe.users.count %></h3>
