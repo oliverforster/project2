@@ -20,7 +20,9 @@ div.white { background-color: green; }
 
 .recipes { width: 960px; margin: 100px auto; text-align: center; }
 
-.far-out { margin-left: 110%; }
+.pure-menu-list { width: 100%; }
+
+.pure-menu-allow-hover { float: right; margin-top: 17px; margin-right: 9px; }
 
 .button-warning { background: #df7514; /* this is an orange */ }
 
