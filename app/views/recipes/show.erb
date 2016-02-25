@@ -1,16 +1,26 @@
 <h1><%= @recipe.name %></h1>
 
-<div style="background-image: url('<%= @recipe.recipe_pic %>')" class="recipe_pic"></div>
-
-<p><%= @recipe.ingredients %></p>
-<p><%= @recipe.method %></p>
-
-
-
-<h3><%= @recipe.users.count %></h3>
-
-<% if current_user.can_vote?(@recipe) && !current_user.is_chef? %>
-  <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
-    <button type="submit" class="pure-button">Star</button>
-  </form>
-<% end %>
+<div class="pure-g">
+  <div class="pure-u-1-24"></div>
+  <div class="pure-u-1-24">
+    <h3><%= @recipe.users.count %></h3>
+  </div>
+  <div class="pure-u-22-24">
+    <% if current_user.can_vote?(@recipe) && !current_user.is_chef? %>
+      <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
+        <button type="submit" class="pure-button">Star</button>
+      </form>
+    <% end %>
+  </div>
+</div>
+<div class="pure-g">
+  <div class="pure-u-1-24"></div>
+  <div class="pure-u-8-24">
+    <div style="background-image: url('<%= @recipe.recipe_pic %>')" class="recipe_pic"></div>
+  </div>
+  <div class="pure-u-14-24">
+    <p><%= @recipe.ingredients %></p>
+    <p><%= @recipe.method %></p>
+  </div>
+  <div class="pure-u-1-24"></div>
+</div>
