@@ -5,8 +5,12 @@ end
 
 get '/users/:id' do  
   @user = User.find(params[:id])
-  @recipes = @user.recipes
-  @stars = Recipe
+
+  if @user.is_chef?
+    @recipes = @user.created_recipes
+  else
+    @recipes = @user.recipes
+  end
   erb :'/users/show'
 end
 

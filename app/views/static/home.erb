@@ -1,17 +1,13 @@
 <h1>Home</h1>
 
 <div class="pure-g">
-  <div class="pure-u-1-3"><p></p></div>
-  <div class="pure-u-1-3">
-    <h2><a href="/challenges/<%= @challenge.id %>"><%= @challenge.name %></a></h2>
-    <p><%= @challenge.information %></p>  
+  <div class="pure-u-2-5"><p></p></div>
+  <div class="pure-u-1-5">
+    <a class="button-secondary pure-button" href="/challenges/<%= @challenge.id %>">
+      <h2><%= @challenge.name %></h2>
+      <p><%= @challenge.information %></p>  
+    </a> 
   </div>
-  <div class="pure-u-1-3"><p></p></div>
+  <div class="pure-u-2-5"><p></p></div>
 </div>
 
-
-<!--<% @users.each do |user| %>
-
-<%= user.full_name %>
-
-<% end %> -->

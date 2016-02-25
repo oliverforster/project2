@@ -27,6 +27,13 @@ Challenge.destroy_all
   User.create!(user)
 end
 
+[ {
+  name: "cake challenge",
+  information: "create a safe cake"
+  }].each do |challenge|
+    Challenge.create!(challenge)
+end
+
 u_oli = User.create(username: "Oli",
                     full_name: "Oli Forster",
                     email: "oliforster798@gmail.com",
@@ -42,29 +49,20 @@ u_max = User.create(username: "Maxxx",
                     password: "hello") 
 
 
-r_cake1 = Recipe.create(challenge_id: 1,
+r_cake1 = Recipe.create(challenge_id: Challenge.first.id,
+                        chef_id: u_oli.id,
                         method: "chop cook serve",
                         ingredients: "flour eggs tomato",
                         name:"cake1")
 
-r_cake2 = Recipe.create(challenge_id: 1,
+r_cake2 = Recipe.create(challenge_id: Challenge.first.id,
+                        chef_id: u_oli.id,
                         method: "chop cook serve",
                         ingredients: "flour eggs cucumber",
                         name:"cake2")
 
-r_cake3 = Recipe.create(challenge_id: 1,
+r_cake3 = Recipe.create(challenge_id: Challenge.first.id,
+                        chef_id: u_max.id,
                         method: "chop cook serve",
                         ingredients: "flour eggs potato",
                         name:"potatocake")
-
-u_oli.recipes << r_cake1
-u_oli.recipes << r_cake2
-u_max.recipes << r_cake3
-
-
-[ {
-  name: "cake challenge",
-  information: "create a safe cake"
-  }].each do |challenge|
-    Challenge.create!(challenge)
-end

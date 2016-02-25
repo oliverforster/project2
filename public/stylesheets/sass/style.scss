@@ -19,7 +19,9 @@ nav {
 }
 
 
-
+.pure-menu-link {
+    color: #2BDE73;
+}
 
 div.black {
   background-color: blue;
@@ -37,6 +39,7 @@ div.white {
 
 .far-out {
   margin-left: 110%;
+  color: #2BDE73;
 }
 
 .button-warning {
@@ -45,4 +48,9 @@ div.white {
 
 .login {
   margin-top: 150px;
+}
+
+.homeChallenge {
+  background-color: red;
+  border-radius: 14px;
 }

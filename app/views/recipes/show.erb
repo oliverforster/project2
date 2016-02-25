@@ -4,7 +4,7 @@
 
 <h3><%= @recipe.users.count %></h3>
 
-<% if current_user.can_vote?(@recipe) && !is_chef? %>
+<% if current_user.can_vote?(@recipe) && !current_user.is_chef? %>
   <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
     <button type="submit" class="pure-button">Star</button>
   </form>

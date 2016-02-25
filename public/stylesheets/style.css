@@ -5,16 +5,20 @@ nav { background-color: #7F7FBE; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
 
+.pure-menu-link { color: #2BDE73; }
+
 div.black { background-color: blue; }
 
 div.white { background-color: green; }
 
 .recipes { width: 960px; margin: 100px auto; text-align: center; }
 
-.far-out { margin-left: 110%; }
+.far-out { margin-left: 110%; color: #2BDE73; }
 
 .button-warning { background: #df7514; /* this is an orange */ }
 
 .login { margin-top: 150px; }
+
+.homeChallenge { background-color: red; border-radius: 14px; }
 
 /*# sourceMappingURL=style.css.map */
