@@ -4,11 +4,11 @@
 }
 
 body {
-  background-color: #F7FAFA;
+  background-color: #CDD5D1;
 }
 
 nav {
-  background-color: #7F7FBE;
+  background-color: #546A76;
   .logo {
     font-family: "customFont", RNS-B;
     font-size: 30px;
@@ -20,7 +20,7 @@ nav {
 
 
 .pure-menu-link {
-    color: #2BDE73;
+    color: #07DE2A;
 }
 
 div.black {
@@ -39,7 +39,6 @@ div.white {
 
 .far-out {
   margin-left: 110%;
-  color: #2BDE73;
 }
 
 .button-warning {
@@ -53,4 +52,30 @@ div.white {
 .homeChallenge {
   background-color: red;
   border-radius: 14px;
+}
+
+.button-secondary {
+  margin-top: 50px;
+  background-color: #2BDE73;
+  border-radius: 60px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  h2 {
+    color: #333333;
+    font-weight: 200;
+
+  }
+  p {
+    color: #333333;
+    font-weight: 200;
+  }
+}
+
+.challengehome {
+  margin-top: 150px;
+}
+
+.rules {
+  margin-top: 50px;
+  font-weight: 100;
 }

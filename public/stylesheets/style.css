@@ -1,11 +1,11 @@
 @font-face { font-family: "customFont"; src: url("/images/fonts/RNS-B.ttf"); }
-body { background-color: #F7FAFA; }
+body { background-color: #CDD5D1; }
 
-nav { background-color: #7F7FBE; }
+nav { background-color: #546A76; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
 
-.pure-menu-link { color: #2BDE73; }
+.pure-menu-link { color: #07DE2A; }
 
 div.black { background-color: blue; }
 
@@ -13,12 +13,20 @@ div.white { background-color: green; }
 
 .recipes { width: 960px; margin: 100px auto; text-align: center; }
 
-.far-out { margin-left: 110%; color: #2BDE73; }
+.far-out { margin-left: 110%; }
 
 .button-warning { background: #df7514; /* this is an orange */ }
 
 .login { margin-top: 150px; }
 
 .homeChallenge { background-color: red; border-radius: 14px; }
+
+.button-secondary { margin-top: 50px; background-color: #2BDE73; border-radius: 60px; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); width: 100%; }
+.button-secondary h2 { color: #333333; font-weight: 200; }
+.button-secondary p { color: #333333; font-weight: 200; }
+
+.challengehome { margin-top: 150px; }
+
+.rules { margin-top: 50px; font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */
