@@ -7,6 +7,8 @@ h2 { color: #333333; font-weight: 200; }
 
 h3 { color: #333333; font-weight: 200; }
 
+h4 { font-weight: bold; font-size: 25px; }
+
 nav { background-color: #546A76; }
 nav .logo { font-family: "customFont", RNS-B; font-size: 30px; }
 nav .logo span { color: #2BDE73; }
@@ -56,5 +58,7 @@ div.pure-g div { text-align: center; margin-top: 10px; }
 div.pure-g div a { min-width: 100%; max-width: 100%; }
 
 button { min-width: 100%; }
+
+.star-button { background-color: transparent; border: none; }
 
 /*# sourceMappingURL=style.css.map */
