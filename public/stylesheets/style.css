@@ -1,7 +1,7 @@
 @font-face { font-family: "customFont"; src: url("/images/fonts/RNS-B.ttf"); }
 body { background-color: #CDD5D1; }
 
-h1 { color: #333333; font-weight: 200; }
+h1 { color: #333333; font-weight: 200; margin-left: 5%; }
 
 h2 { color: #333333; font-weight: 200; }
 
@@ -44,5 +44,7 @@ div.white { background-color: green; }
 .rules .black p { padding: 0 8px; }
 
 .picture { height: 200px; background-repeat: no-repeat; background-size: contain; }
+
+.recipe_pic { height: 50vh; background-repeat: no-repeat; background-size: contain; }
 
 /*# sourceMappingURL=style.css.map */

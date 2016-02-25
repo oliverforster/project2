@@ -10,6 +10,7 @@ body {
 h1 {
   color: #333333;
   font-weight: 200;
+  margin-left: 5%
 }
 
 h2 {
@@ -125,6 +126,12 @@ div.white {
 
 .picture {
   height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.recipe_pic {
+  height: 50vh;
   background-repeat: no-repeat;
   background-size: contain;
 }
