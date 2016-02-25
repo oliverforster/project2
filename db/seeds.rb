@@ -14,6 +14,7 @@ Challenge.destroy_all
     full_name: "Jay Chauhan",
     email: "jay@hotmail.com",
     user_type: "visitor",
+    profile_pic: "http://ichef.bbci.co.uk/naturelibrary/images/ic/credit/640x395/e/eu/eurasian_jay/eurasian_jay_1.jpg",
     password: "hello"
 
   },
@@ -22,6 +23,7 @@ Challenge.destroy_all
     full_name: "Carmen Carmona",
     email: "Carmen@yahoo.com",
     user_type: "visitor",
+    profile_pic: "http://vignette4.wikia.nocookie.net/shrek/images/8/87/Shrek_fierce.jpg/revision/latest?cb=20100604223615",
     password: "hello"
   }].each do |user|
   User.create!(user)
@@ -39,6 +41,7 @@ u_oli = User.create(username: "Oli",
                     email: "oliforster798@gmail.com",
                     start_date: "2/21/2012",
                     user_type: "chef",
+                    profile_pic: "http://static.fjcdn.com/pictures/Barak+oli_40cb9a_4918779.jpg",
                     password: "hello") 
 
 u_max = User.create(username: "Maxxx",
@@ -46,6 +49,7 @@ u_max = User.create(username: "Maxxx",
                     email: "max@gmail.com",
                     start_date: "2/21/2002",
                     user_type: "chef",
+                    profile_pic: "http://amahighlights.com/wp-content/uploads/gordon-ramsay.jpg",
                     password: "hello") 
 
 
