@@ -3,14 +3,15 @@
 <div class="pure-g">
   <div class="pure-u-1-24"></div>
   <div class="pure-u-1-24">
-    <h4><%= @recipe.users.count %></h4>
+    <h4><span class="likes">Stars</span><br><%= @recipe.users.count %></h4>
   </div>
-  <div class="pure-u-22-24">
+  <div class="pure-u-1-24">
     <% if current_user.can_vote?(@recipe) && !current_user.is_chef? %>
       <form id="like-button" method="post" action="/recipes/<%= @recipe.id%>/like">
-        <button type="submit" class="star-button">Star</button>
+        <button type="submit" class="star-button"><div class="star"></div></button>
       </form>
     <% end %>
+  <div class="pure-u-21-24">
   </div>
 </div>
 <div class="pure-g">

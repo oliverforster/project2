@@ -176,3 +176,18 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
+
+.likes {
+  font-weight: 100;
+}
+
+.star {
+  margin-top: 120px;
+  margin-left: 20px;
+  position: relative;
+  background-image: url("/images/star.png");
+  background-repeat: no-repeat;
+  height: 56px;
+  width: 60px;
+  background-size: cover;
+}
