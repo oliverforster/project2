@@ -42,7 +42,7 @@ u_oli = User.create(username: "Oli",
                     start_date: "2012",
                     user_type: "chef",
                     profile_pic: "http://static.fjcdn.com/pictures/Barak+oli_40cb9a_4918779.jpg",
-                    password: "hello") 
+                    password: "hello")
 
 u_max = User.create(username: "Maxxx",
                     full_name: "Max Hilliard",
@@ -50,7 +50,7 @@ u_max = User.create(username: "Maxxx",
                     start_date: "2002",
                     user_type: "chef",
                     profile_pic: "http://amahighlights.com/wp-content/uploads/gordon-ramsay.jpg",
-                    password: "hello") 
+                    password: "hello")
 
 
 r_cake1 = Recipe.create(challenge_id: Challenge.first.id,
@@ -64,7 +64,7 @@ r_cake2 = Recipe.create(challenge_id: Challenge.first.id,
                         chef_id: u_oli.id,
                         method: "If you are cooking this just before you eat, put the water for the penne on to boil before you start the sauce. You will need a big pan, enough to take the pasta and its sauce later.<br>Finely chop the onion, either by hand or in a processor. In a large pan, heat the garlic oil and add the finely chopped onion and a good sprinkling of salt. Cook the onion fairly gently for about 15 minutes without letting it catch and burn, which just means giving it a stir every now and again. It should be very soft and almost beginning to caramelize.<br>Tip in the cans of chopped tomatoes and continue cooking over a gentle heat, simmering for another 15-20 minutes. If you're cooking this ahead, and I always do, stop here.<br>Reheat the almost-finished tomatoes (or just continue as you were if you're making this in one unbroken fluid movement), stir in the double cream and take the pan off the heat. When the water for the pasta comes to the boil add a good measure of salt and tip in the penne. Set a timer for 3-4 minutes less than the packet instructions for cooking it, as you want to make sure it's cooked al dente and will need to start tasting early.<br>Drain the cooked pasta, tip it back in the pan and pour over the vodka, and add the butter and some more salt. Turn the penne in the vodka and melting butter and then tip it into the tomato sauce unless it is easier to pour the tomato sauce over the pasta: it depends on the sizes of pans you are using.<br>Toss the pasta in the sauce until it is evenly coated and turn out into a large, warmed bowl. Put it on the table along with a block of Parmesan and a grater.",
                         ingredients: "1 large onion<br>2 tablespoons garlic infused olive oil<br>salt (for pasta water, to taste)<br>820 grams canned chopped tomatoes<br>2 tablespoons double cream<br>1 kilogram penne rigate (or other short preferably ridged pasta)<br>125 ml vodka<br>4 tablespoons unsalted butter<br>parmesan cheese (for grating over at the table)<br>",
-                        recipe_pic: "http://assets.nigella.com/uploads/b6a4d1ca_6510_4421_a8d9_a7931c85649f/main.jpg",
+                        recipe_pic: "https://www.nigella.com/assets/uploads/recipes/penne-alla-vodka-563b222968f3a.jpg",
                         name:"Penne alla vodka")
 
 r_cake3 = Recipe.create(challenge_id: Challenge.first.id,
